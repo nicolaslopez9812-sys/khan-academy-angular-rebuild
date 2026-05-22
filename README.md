@@ -1,15 +1,15 @@
-# Khan Academy Angular Rebuild
+# Khan Academy Angular
 
-Reconstrucción visual de la página principal de Khan Academy en español usando Angular.
+Reconstruccion visual de la pagina principal de Khan Academy en espanol usando Angular.
 
-## Qué incluye
+## Que incluye
 
-- Header similar al sitio original con búsqueda, logo y acciones principales.
+- Header similar al sitio original con busqueda, logo y acciones principales.
 - Hero con mensaje principal, tarjetas de registro e imagen de estudiantes.
-- Sección de cursos con categorías como Matemáticas, Ciencia, Economía y Computación.
-- Bloques informativos para explicar por qué funciona Khan Academy.
-- Secciones para maestros, estudiantes, misión, patrocinadores y footer.
-- Diseño responsive para computador y celular.
+- Seccion de cursos con categorias como Matematicas, Ciencia, Economia y Computacion.
+- Bloques informativos para explicar por que funciona Khan Academy.
+- Secciones para maestros, estudiantes, mision, patrocinadores y footer.
+- Diseno responsive para computador y celular.
 
 ## Ejecutar el proyecto
 
@@ -31,7 +31,7 @@ Abre el navegador en:
 http://127.0.0.1:4300/
 ```
 
-## Comandos útiles
+## Comandos utiles
 
 Compilar el proyecto:
 
@@ -48,5 +48,5 @@ npm test -- --watch=false
 ## Estructura principal
 
 - `src/app/app.ts`: datos usados por la interfaz.
-- `src/app/app.html`: estructura HTML de la página.
+- `src/app/app.html`: estructura HTML de la pagina.
 - `src/app/app.css`: estilos visuales y responsive.
