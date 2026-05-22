@@ -1,0 +1,174 @@
+<main class="khan-page" aria-label="Reconstrucción visual de Khan Academy">
+  <a class="skip-link" href="#contenido">Saltar al contenido principal</a>
+
+  <header class="topbar">
+    <div class="topbar__inner">
+      <button class="explore-button" type="button">
+        Explorar
+        <span aria-hidden="true">▾</span>
+      </button>
+
+      <label class="search" aria-label="Busca cursos, habilidades y videos">
+        <span aria-hidden="true">⌕</span>
+        <input type="search" placeholder="Buscar" />
+      </label>
+
+      <a class="brand" href="#" aria-label="Khan Academy">
+        <span class="brand__mark" aria-hidden="true">
+          <span></span>
+        </span>
+        <span>Khan Academy</span>
+      </a>
+
+      <nav class="actions" aria-label="Acciones principales">
+        <a href="#">Haz una donación ↗</a>
+        <a href="#">Iniciar sesión</a>
+        <a class="button button--primary button--compact" href="#">Regístrate</a>
+      </nav>
+    </div>
+  </header>
+
+  <section id="contenido" class="hero">
+    <div class="hero__copy">
+      <h1>¡Khan Academy aumenta los puntajes!</h1>
+      <p>
+        Aprende con millones de personas en todo el mundo explorando videos,
+        abordando problemas de práctica y obteniendo soporte basado en la IA.
+      </p>
+      <img
+        class="hero__image"
+        src="https://cdn.kastatic.org/images/lohp/boost-scores.png"
+        alt=""
+      />
+    </div>
+
+    <aside class="signup" aria-label="Registro">
+      <h2>¡Empieza a aprender hoy registrándote!</h2>
+      <a class="signup__option" href="#">Soy estudiante <span aria-hidden="true">›</span></a>
+      <a class="signup__option" href="#">Soy maestro <span aria-hidden="true">›</span></a>
+      <a class="signup__option" href="#">Soy padre/madre de familia <span aria-hidden="true">›</span></a>
+      <p>¿Ya tienes una cuenta de Khan Academy? <a href="#">Iniciar sesión</a></p>
+    </aside>
+  </section>
+
+  <section class="courses" aria-label="Cursos destacados">
+    @for (group of courseGroups; track group.title) {
+      <article class="course-card" [style.--accent]="group.accent">
+        <header>
+          <img [src]="group.icon" alt="" />
+          <h2>{{ group.title }}</h2>
+          <span class="chevron" aria-hidden="true">⌃</span>
+        </header>
+        <ul>
+          @for (topic of group.topics; track topic) {
+            <li><a href="#">{{ topic }}</a></li>
+          }
+        </ul>
+      </article>
+    }
+  </section>
+
+  <section class="why" aria-labelledby="why-title">
+    <h2 id="why-title">¿Por qué funciona Khan Academy?</h2>
+    <div class="why__grid">
+      @for (feature of features; track feature.title) {
+        <article>
+          <img [src]="feature.image" alt="" />
+          <h3>{{ feature.title }}</h3>
+          <p>{{ feature.copy }}</p>
+        </article>
+      }
+    </div>
+  </section>
+
+  <section class="story story--teachers">
+    <img src="https://cdn.kastatic.org/images/lohp/faces_collage_2@2x.png" alt="" />
+    <div>
+      <p class="eyebrow">MAESTROS</p>
+      <h2>Haz una diferencia en tu salón de clases y fomenta la participación de cada estudiante.</h2>
+      <p>
+        Empoderamos a los maestros para que apoyen a todo su salón de clases.
+        90% de los maestros de EE. UU. que han usado Khan Academy lo considera efectivo.
+      </p>
+      <a class="button button--primary" href="#">Maestros, inicien aquí</a>
+    </div>
+  </section>
+
+  <section class="story story--students">
+    <div>
+      <p class="eyebrow">ESTUDIANTES</p>
+      <h2>Tú puedes aprender lo que sea.</h2>
+      <p>
+        Construye un entendimiento profundo y sólido en matemáticas, ciencias,
+        economía, computación y muchas áreas más.
+      </p>
+      <a class="button button--primary" href="#">Estudiantes, inicien aquí</a>
+    </div>
+    <img src="https://cdn.kastatic.org/images/lohp/laptop_collage@2x.png" alt="" />
+  </section>
+
+  <section class="mission">
+    <div>
+      <p class="eyebrow">JUNTOS PODEMOS HACERLO</p>
+      <h2>Todos los niños y las niñas merecen la oportunidad de aprender.</h2>
+      <p>
+        En todo el mundo, estamos ayudando a estudiantes, maestros y familias a
+        alcanzar sus metas. Dale a todos la oportunidad de aprender gratis.
+      </p>
+      <a class="button button--primary" href="#">Dales la oportunidad</a>
+    </div>
+    <img src="https://cdn.kastatic.org/images/lohp/anjali-3.png" alt="" />
+  </section>
+
+  <section class="join">
+    <h2>Únete a Khan Academy hoy</h2>
+    <div class="join__actions" aria-label="Opciones de registro">
+      <a class="button button--primary" href="#">Estudiantes</a>
+      <a class="button button--primary" href="#">Maestros</a>
+      <a class="button button--primary" href="#">Padres</a>
+      <a class="button button--outline" href="#">Dales la oportunidad</a>
+    </div>
+  </section>
+
+  <section class="sponsors" aria-labelledby="sponsor-title">
+    <h2 id="sponsor-title">Patrocinadores principales</h2>
+    <div class="sponsors__grid">
+      @for (sponsor of sponsors; track sponsor.name) {
+        <img [src]="sponsor.logo" [alt]="sponsor.name" />
+      }
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer__statement">
+      <p>
+        Nuestra misión es proporcionar una educación gratuita de clase mundial
+        para cualquier persona en cualquier lugar.
+      </p>
+      <p>Khan Academy es una organización sin fines de lucro 501(c)(3).</p>
+    </div>
+    <nav aria-label="Navegación del sitio">
+      <div>
+        <h2>Navegación del sitio</h2>
+        <a href="#">Acerca de</a>
+        <a href="#">Noticias</a>
+        <a href="#">Impacto</a>
+        <a href="#">Nuestro equipo</a>
+      </div>
+      <div>
+        <h2>Cursos</h2>
+        <a href="#">Matemáticas</a>
+        <a href="#">Ciencia</a>
+        <a href="#">Economía y finanzas</a>
+        <a href="#">Computación</a>
+      </div>
+      <div>
+        <h2>Contacto</h2>
+        <a href="#">Ayuda</a>
+        <a href="#">Compartir tu historia</a>
+        <a href="#">Prensa</a>
+        <a href="#">Descarga nuestras apps</a>
+      </div>
+    </nav>
+  </footer>
+</main>

@@ -1,0 +1,24 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: #ffffff;
+  color: #21242c;
+  overflow-x: hidden;
+  font-family:
+    Arial,
+    Helvetica,
+    system-ui,
+    sans-serif;
+}
+
+button,
+a {
+  font: inherit;
+}
