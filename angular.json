@@ -6,7 +6,7 @@
   },
   "newProjectRoot": "projects",
   "projects": {
-    "duolingo-rebuild": {
+    "khan-academy-angular": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -56,10 +56,10 @@
           "builder": "@angular/build:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "duolingo-rebuild:build:production"
+              "buildTarget": "khan-academy-angular:build:production"
             },
             "development": {
-              "buildTarget": "duolingo-rebuild:build:development"
+              "buildTarget": "khan-academy-angular:build:development"
             }
           },
           "defaultConfiguration": "development"
