@@ -1,16 +1,5 @@
 # Khan Academy Angular
 
-Reconstruccion visual de la pagina principal de Khan Academy en espanol usando Angular.
-
-## Que incluye
-
-- Header similar al sitio original con busqueda, logo y acciones principales.
-- Hero con mensaje principal, tarjetas de registro e imagen de estudiantes.
-- Seccion de cursos con categorias como Matematicas, Ciencia, Economia y Computacion.
-- Bloques informativos para explicar por que funciona Khan Academy.
-- Secciones para maestros, estudiantes, mision, patrocinadores y footer.
-- Diseno responsive para computador y celular.
-
 ## Ejecutar el proyecto
 
 Instala las dependencias:
